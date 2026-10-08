@@ -1,0 +1,5 @@
+# Words Whisper should spell right: your church name, staff and elder names,
+# denomination terms, current sermon series. One line or many; keep it short (under ~60 words).
+# Lines starting with # are ignored.
+Grace Presbyterian Church, Session, elders, deacons, presbytery, PCA, BCO,
+men's ministry, women's ministry, youth, sermon, Hebrews

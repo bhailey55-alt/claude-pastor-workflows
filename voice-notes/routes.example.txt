@@ -1,0 +1,27 @@
+# Voice Router — routing rules
+# Start a recording with the topic, pause, then talk:
+#   "Session, ..."            -> your Session notes folder
+#   "Sermon, Advent, ..."     -> Sermons/Advent   (subtopic folder created if new)
+#   "Presbytery, ..."         -> Voice Notes/Presbytery   (brand-new topic: folder created)
+#
+# Format:  keywords | folder inside Google Drive | sub: where new subtopic folders go
+#   Paths are relative to your Google Drive root as Finder shows it:
+#     "My Drive/..."            = your own Drive
+#     "Shared drives/*/..."     = any shared drive (the * matches the drive's name)
+#   The first keyword on each line is the label used in the transcript's filename.
+#   Add other spellings Whisper might use after commas (e.g. "women's, womens").
+# New topics get added to the bottom of this file automatically.
+# Edits take effect on the next recording. No restart needed.
+#
+# >>> Your Claude replaces the example paths below with your real folders. <<<
+
+session, session meeting, elders              | Shared drives/*/Session Minutes/_Voice Inbox
+sermon, sermons                               | My Drive/Sermons/_Voice Notes | sub: My Drive/Sermons
+women's ministry, womens ministry, women's, womens, women | Shared drives/*/Women's Ministry/Voice Notes | sub: Shared drives/*/Women's Ministry
+men's ministry, mens ministry, men's, mens, men | Shared drives/*/Men's Ministry/Voice Notes | sub: Shared drives/*/Men's Ministry
+youth, youth group                            | Shared drives/*/Youth/Voice Notes | sub: Shared drives/*/Youth
+
+# Brand-new topics get their own folder here:
+NEWTOPIC                                      | My Drive/Voice Notes
+# Can't tell the topic (no pause, or starts mid-sentence):
+UNSORTED                                      | My Drive/Voice Notes - Unsorted
